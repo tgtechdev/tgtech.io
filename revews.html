@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tom's Tech - Reviews</title>
+    
+    <link rel="stylesheet" href="./style.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="page-wrapper">
+
+        <header class="side-header">
+            <img src="./images/Tom Banner.png" alt="Site Banner" class="banner-img" />
+        </header>
+            <nav>
+            <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+            <ul class="menu" id="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="./revews.html">reviews</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./contact.html">Contact</a></li>         
+            </ul>
+        </nav>
+
+   <div class="container reviews-section">
+
+    <div class="sort-controls">
+        <label for="sort">Sort by:</label>
+        <select id="sort">
+            <option value="rating">Highest Rating</option>
+            <option value="date">Newest First</option>
+        </select>
+   </div>
+
+   <div id="reviews-container">
+    <div class="review-card" data-rating="4.5" data-date="2025-09-28">
+        <h3>Kingdom Come Deliverance 2</h3>
+        <p class="stars">**** 1/2</p>
+        <p>This game delivers! What an epic conquest.</p>
+        <p><a href="./blog-kcd2.html">Read more</a></p>
+    </div>
+
+        <div class="review-card" data-rating="4.5" data-date="2025-09-28">
+        <h3>Kingdom Come Deliverance 1</h3>
+        <p class="stars">***</p>
+        <p>The graphics are not as good.</p>
+        <p><a href="./blog-kcd2.html">Read more</a></p>
+    </div>
+   </div>
+</div>
+</body>
+</html>

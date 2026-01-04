@@ -1,0 +1,310 @@
+body {
+    font-family: 'Lexend', Arial, verdana, sans-serif;
+    line-height: 1.6; /* Improves readability */
+    font-size: 1.1rem;
+    background-color: #fdfdfd;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    
+}
+/* HEADING formatting */
+h1 {
+    color:#CD5C5C;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+h2 {
+    color:#800000;
+     margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+h3 {
+    color: #32CD32;
+     margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+a {
+    color:#4682B4;
+}
+
+/* Forces size of page on different devices */
+.page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Header Banner*/
+ .site-header {
+  background-color: white;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .banner-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+ }
+
+ /* Navagation */
+  nav {
+    background-color: #737373;
+    border-radius: 12px;
+    margin: 10px 0; 
+    position: relative;
+  }
+
+.menu{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu > li {
+  display: inline-block;
+}
+
+ /* Dropdown mech */
+ .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  top: 100%;
+  left: 0;
+  min-width: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+ }
+
+ .menu li:hover .dropdown {
+  display: block;
+ }
+
+ /* Burger Menu */
+ .menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+ }
+
+@media (max-with: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    width: 100%;
+  }
+
+  .menu li:hover .dropdown {
+    position: static;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+a:hover {
+    color:#FF6347;
+}
+
+body {
+    background-color:#FFFFF0;
+}
+
+p {
+    color: #778899;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: darksalmon;
+    color: white;
+}
+
+/* CONTACT FORM */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+
+  /* Responsive design for images - mobile */
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(red, green, blue, alpha);
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 16px;
+    }
+  }
+
+  /* Drop-down menu */
+
+  /* Main Menu */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+  }
+  
+  .menu li {
+    position: relative; /* Needed for dropdown positioning */
+  }
+  
+  .menu > li {
+    display: inline-block;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    background-color: #555;
+  }
+  
+  /* Dropdown Menu */
+  .dropdown {
+    display: none; /* Hide by default */
+    position: absolute;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%; /* Place it below the parent */
+    left: 0;
+    min-width: 150px;
+  }
+  
+  .dropdown li {
+    display: block;
+  }
+  
+  .dropdown a {
+    padding: 10px 20px;
+  }
+  
+  /* Show the dropdown on hover */
+  .menu li:hover .dropdown {
+    display: block;
+  }
+
+  /* MAIN CONTENT - Puts main content in the center of page */
+
+  .container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px 0;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  /* REVIEWS PAGE */
+  /* This will align the review boxes into columns and adjust the layout */
+
+  .reviews-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+  }
+
+  /* Sidebar for sorting */
+
+  .sort-controls {
+    flex: 1 1 30%;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05,);
+    height: fit-content;
+  }
+
+  /* Main review section*/
+  #reviews-container {
+    flex: 1 1 70%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+  }
