@@ -218,7 +218,7 @@ body {
   .read-more {
     display: inline-block;
     margin-top: 10px;
-    color: #ffc402;
+    color: #cc0000;
     text-decoration: none;
     font-weight: bold;
   }
@@ -386,7 +386,7 @@ body {
 }
 
 .blog-post h2 a:hover {
-  color: #eee600; /* match your site accent color */
+  color: #cc0000; /* match your site accent color */
 }
 
 .post-meta {
@@ -419,7 +419,7 @@ body {
 }
 
 .post-categories li {
-  background-color: #eee600;  /* use your theme's accent color */
+  background-color: #cc0000;  /* use your theme's accent color */
   color: white;
   border-radius: 8px;
   padding: 4px 10px;
@@ -440,7 +440,7 @@ body {
 .read-more {
   display: inline-block;
   margin-top: 15px;
-  background-color: #eee600;
+  background-color: #cc0000;
   color: white;
   padding: 8px 16px;
   border-radius: 8px;
@@ -450,5 +450,5 @@ body {
 }
 
 .read-more:hover {
-  background-color: #d5c500; /* slightly darker on hover */
+  background-color: #b30000; /* slightly darker on hover */
 }
